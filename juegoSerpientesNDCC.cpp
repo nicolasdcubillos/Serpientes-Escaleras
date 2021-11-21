@@ -8,15 +8,15 @@
 #include "proyectondcc.h"
 
 /*	 
-								NICOL罶 DAVID CUBILLOS CUBILLOS
-								  PROGRAMACI覰 DE COMPUTADORES
+								NICOL脕S DAVID CUBILLOS CUBILLOS
+								  PROGRAMACI脫N DE COMPUTADORES
 								PONTIFICIA UNIVERSIDAD JAVERIANA
 									  NOVIEMBRE 15 DE 2020
 									  	SEGUNDA ENTREGA
 			  	
 			En esta segunda entrega se implementa el concepto de Lista y sus funciones.
-		 Trabaja mediante una lista sencilla encadenada, en donde los Nodos tienen un 鷑ico
-	apuntador al siguiente Nodo y en la informaci髇 de cada uno se encuentra la casilla del tablero
+		 Trabaja mediante una lista sencilla encadenada, en donde los Nodos tienen un 煤nico
+	apuntador al siguiente Nodo y en la informaci贸n de cada uno se encuentra la casilla del tablero
 	
 */
 
@@ -26,18 +26,18 @@ int main( )
 {
 	HANDLE hConsole;
 	hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleTextAttribute(hConsole, 15); // Asigna un color m醩 n韙ido a la letra = 15 en vez de 07
+	SetConsoleTextAttribute(hConsole, 15); // Asigna un color m谩s n铆tido a la letra = 15 en vez de 07
 	
 	int nplayers;
 	int* config = new int [4];
 	config = _leerConfig();
 	
 	/*
-		El vector-pointer config, hace referencia la configuraci髇 del juego de la siguiente manera:
-		Posici髇 0: N鷐ero total de casillas del juego.
-		Posici髇 1: N鷐ero de casillas por l韓ea.
-		Posici髇 2: Bool de Encarcelamiento por triple 6.
-		Posici髇 3: Bool de Juego con preguntas (es -1 si hay problemas con los archivos).
+		El vector-pointer config, hace referencia la configuraci贸n del juego de la siguiente manera:
+		Posici贸n 0: N煤mero total de casillas del juego.
+		Posici贸n 1: N煤mero de casillas por l铆nea.
+		Posici贸n 2: Bool de Encarcelamiento por triple 6.
+		Posici贸n 3: Bool de Juego con preguntas (es -1 si hay problemas con los archivos).
 	*/
 	
 	Player* players;
