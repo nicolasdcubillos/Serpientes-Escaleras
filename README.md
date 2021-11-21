@@ -1,31 +1,24 @@
-# Serpientes y Escaleras
-Juego de serpientes y escaleras desarrollado en C++. 
+# Juego Serpientes y Escaleras
+Juego de serpientes y escaleras elaborado en C++. 
+
+El tablero es una representación de un tipo abstracto de dato lineal (TAD lista). Utilización de conceptos de programación de computadores como apuntadores, memoria dinámica y templates.
 
 ## Instalación
 
 ```bash
-make
+g++ -o juegoSerpientes.exe juegoSerpientesNDCC.cpp
 ```
 
 ## Utilización
 
-Instanciación del servidor o proceso receptor
-
+Inicio del juego
 ```bash
-./receptor -p nombrePipe -f fileEntrada -s fileSalida
-```
-
-Instanciación de un cliente o proceso(s) solicitante(s)
-
-```bash
-./solicitante [-i archivoSolicitudes] -p nombrePipe
+juegoSerpientes.exe
 ```
   
-## Autores
+## Autor
   
 Nicolás David Cubillos Cubillos
-
-Angello Mateo Jaimes Rincón
 
 ## Licencia
 
